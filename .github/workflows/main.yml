@@ -1,4 +1,4 @@
-name: Copy To Branches
+name: Generate Feed
 on: [push]
 jobs:
   copy-to-branches:
