@@ -6,6 +6,7 @@ link: http://raybo.org/podcast-feed-test
 image: /images/artwork.jpg
 language: en-us
 category: Technology
+explicit: false
 format: audio/mpeg
 item:
   - title: EP01-What's Happening in 2023
