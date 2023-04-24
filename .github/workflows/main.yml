@@ -1,19 +1,10 @@
 name: Generate Feed
 on: [push]
 jobs:
-  copy-to-branches:
+  generate-feed:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-        with:
-          python-version: '3.10'
       - name: Run Feed Generator
         uses: planetoftheweb/podcast-feed-generator@main
-      - name: Push repo
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "Modified Feed"
-          git push
